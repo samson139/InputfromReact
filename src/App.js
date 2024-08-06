@@ -7,6 +7,7 @@ export default function App() {
     age: "",
     adult: "false",
     favfood: "",
+    favplace: "",
   });
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -25,7 +26,6 @@ export default function App() {
             onChange={handleChange}
           />
         </div>
-
         <div className="oneInput">
           <label for="age">Age</label>
           <input
@@ -54,7 +54,32 @@ export default function App() {
             <option value={"fries"}>fries</option>
           </select>
         </div>
-
+        <div>
+          <label for="india">India</label>
+          <input
+            type="radio"
+            id="india"
+            name="favplace"
+            value="india"
+            onChange={handleChange}
+          />
+          <label for="usa">usa</label>
+          <input
+            type="radio"
+            id="usa"
+            name="favplace"
+            value="us"
+            onChange={handleChange}
+          />
+          <label for="uk">uk</label>
+          <input
+            type="radio"
+            id="uk"
+            name="favplace"
+            value="uk"
+            onChange={handleChange}
+          />
+        </div>
         <button>Submit</button>
       </form>
     </div>
