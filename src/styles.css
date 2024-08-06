@@ -1,0 +1,9 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.oneInput {
+  border-bottom: 30px;
+  margin: 2px solid red;
+}
